@@ -1,0 +1,8 @@
+
+{
+    "data_folder": {
+        "home_dir": "/disk1/data/ing_mlm_data/",
+        "original_dir": "original",
+        "processed_dir": "processed"
+    }
+}
