@@ -4,5 +4,31 @@
         "home_dir": "/disk1/data/ing_mlm_data/",
         "original_dir": "original",
         "processed_dir": "processed"
+    },
+    "bert_config": {
+        "resize_embedding": true,
+        "tokenizer": {
+            "tokenizer_file_path": {
+                "ingr_only": "/home/donghee/projects/mlm/resources/ingt_tokenizer_ingr_only.json",
+                "ingr_title": "/home/donghee/projects/mlm/resources/ingt_tokenizer_ingr_title.json",
+                "ingr_tag": "/home/donghee/projects/mlm/resources/ingt_tokenizer_ingr_tag.json",
+                "ingr_title_tag": "/home/donghee/projects/mlm/resources/ingt_tokenizer_ingr_title_tag.json"   
+            }, 
+            "tokenizer_train_file_path": {
+                "ingr_only": "/disk1/data/ing_mlm_data/processed/v1_ing_only/train.txt",
+                "ingr_title": "/disk1/data/ing_mlm_data/processed/v2_ing_title/train.txt",
+                "ingr_tag": "/disk1/data/ing_mlm_data/processed/v3_ing_tag/train.txt",
+                "ingr_title_tag": "/disk1/data/ing_mlm_data/processed/v3_ing_title_tag/train.txt"
+            },
+            "vocab_max_size": 50000,
+            "special_tokens": [
+                "[UNK]",
+                "[PAD]",
+                "[CLS]",
+                "[SEP]",
+                "[MASK]"
+            ],
+            "max_len": 512
+        }
     }
 }

@@ -6,7 +6,7 @@ import pickle
 import json
 from tqdm import tqdm
 
-ingt_config = bootstrap.IngTConfig(
+ingt_config = bootstrap.IngConfig(
     vocab="ingr_only", path="/home/donghee/projects/mlm2/config.json"
 )
 
